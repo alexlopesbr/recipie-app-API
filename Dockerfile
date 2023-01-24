@@ -1,6 +1,7 @@
 FROM python:3.9-alpine3.13
 LABEL maintainer="alexandre_lopes"
 
+# The output from python will be ptinted directly to the console
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
